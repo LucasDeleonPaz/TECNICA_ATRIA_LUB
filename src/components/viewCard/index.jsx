@@ -3,8 +3,9 @@ const CardView = () => {
 
     return(
 
-        <>
-        </>
+        <div>
+            
+        </div>
 
     )
 

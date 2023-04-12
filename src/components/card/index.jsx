@@ -1,19 +1,14 @@
-import { useContext } from "react";
-
-import { ListProvider } from "../../context/list/listContext";
+import { useContext, useState } from "react";
+import { ListContext } from "../../context/list/listContext";
 
 const CardPerson = () => {
 
-    const { dataList } = useContext(ListProvider)
-
-    console.log(dataList.data)
+    const { dataList, setDataList } = useContext(ListContext)
 
     return (
 
-
         <div>
-
-
+         
         </div>
 
     )
