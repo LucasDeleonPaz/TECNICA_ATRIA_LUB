@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+<H1 ALIGN=CENTER><strong> APLICAÇÃO PRÁTICA | TESTE DE COMPETÊNCIA TÉCNICA </strong></H1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto que tem por intuito demonstrar a competência técnica em relação a capacidade para construir uma aplicação web, utilizando do React para tal. <br>
+Tal aplicação fora construída com base no arquivo PDF à mim enviado para servir de exemplo<br>
+O layout final da aplicação segue, em relação às suas disposições, o arquivo base apresentado.
 
-## Available Scripts
+<br>
+<H3><strong>ESSE DOCUMENTO GARANTE TODA A DOCUMENTAÇÃO RELATIVA À ESSA PRODUÇÃO.</strong></h3>
+<br>
 
-In the project directory, you can run:
+## <strong>INDICE</strong> 
+<br>
 
-### `yarn start`
+<!--ts-->
+- [SOBRE](#sobre)
+- [TECNOLOGIAS](#tecnologias)
+- [ARQUITETURA DA APLICAÇÃO](#arquitetura-da-aplicação)
+  - [SRC](#src)
+    - [COMPONENTS](#components)
+    - [CONTEXT](#context)
+    - [PAGES](#pages)
+    - [PROVIDERS](#providers)
+    - [ROTAS](#rotas)
+    - [SERVICES](#service)
+- [FUNCIONALIDADES](#funcionalidade)
+- [FEATURES](#features)
+<!--te-->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## <strong>SOBRE</strong> 
 
-### `yarn test`
+Essa aplicação fora construída com o intuíto de certificar a competência técnica e conhecimento prévio necessários <br>
+à um desenvolvedor web. <br>
+A aplicação é bem simples, onde somente tem por obrigação buscar na API base as informações de determinados cadastros, <br>
+utilizar dessas informações para compor um "CARD" de apresentação que, ao ser clicado, abre um "CARD VIEW", contendo <br>
+informações mais detalhadas do cadastro.
+<BR>
+<BR>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## <strong>TECNOLOGIAS</strong>
 
-### `yarn build`
+Abaixo, segue lista de tecnologias usadas para a construção da aplicação 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - REACT 
+ - REACT-ROUTER-DOM
+ - STYLED COMPONENTS
+ - MATERIAL UI
+ - CONTEXT API
+ - REACT ICONS
+ - AXIOS
+<BR>
+<BR>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## <strong>ARQUITETURA DA APLICAÇÃO</strong> 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Essa aplicação segue uma estrutura organizacional que busca o direcionamento e orientação construtiva <br>
+Abaixo, descrevo toda a estrutura montada, sua composição e os motivos de seccionar e separar em diretórios <br>
 
-### `yarn eject`
+  - SRC
+    - Pasta raiz | Contém todos os arquivos e estrutura de pastas voltadas para a organização construtiva da aplicação.
+    - COMPONENTS
+        - Pasta responsável por alocar todos os componentes seccionados que compõe a página final.
+    - CONTEXT
+        - Pasta responsável por alocar o arquivo de código do gerador de contextos, tornando assim a passagem de informações <br>
+        algo mais seguro e direcionado, utilizando do Context API e não de prop-drilling. 
+    - PAGES
+        - Pasta responsável por alocar os arquivos que compões as páginas, página a página. <br>
+        Onde cada página é onde centralizo todos os componentes necessários a justa criação e apresentação do proposto.
+    - PROVIDERS
+        - Pasta responsável por alocar o arquivo de código do provedor de serviços que atua em conjunto do contexto.
+     - ROUTES
+        - Pasta responsável por alocar o arquivo de código gerador e direcionador de rotas.
+    - SERVICES
+        - Pasta responsável por alocar o arquivo de código responsável pela conexão com a API.
+<BR>
+<BR>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## <strong> FUNCIONALIDADES </strong> 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Essa aplicação tem por funcionalidade apresentar de forma visual e prática as informações dos cadastros <br>
+obtidos através da API. A aplicação conta com um botão <strong>"ADD NEW"</strong> que, ao clicarmos nele, <br>
+nos retorna os <strong>"CARDS"</strong> contendo as informações dos cadastros. Além desse botão e os "cards", <br>
+uma vez clicando nos "cards" que apresentam o cadastro, é aberto um modal que contém informações mais detalhadas <br>
+do cadastro observado. 
+<BR>
+<BR>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## <strong> FEATURES </strong> 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ - [X] PÁGINA - PAGELIST
+ - [X] CONTEXTOS
+ - [x] ROTAS 
+ - [X] PROVEDORES
+ - [X] SERVIÇOS
+ - [] CARDS DE CADASTRO
+ - [] CARDS DE VISUALIZAÇÃO - MODAL 
 
-## Learn More
+<BR>
+<BR>
+<BR>
+<BR>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3 align="center"> <STRONG>
+	🚧 TESTE TÉCNICO | ÁTRIA LUB 🚀 EM CONSTRUÇÃO...  🚧
+</STRONG></h3>
