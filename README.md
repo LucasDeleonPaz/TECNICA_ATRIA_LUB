@@ -22,7 +22,7 @@ O layout final da aplicação segue, em relação às suas disposições, o arqu
     - [PROVIDERS](#providers)
     - [ROTAS](#rotas)
     - [SERVICES](#service)
-- [FUNCIONALIDADES](#funcionalidade)
+- [FUNCIONALIDADES](#funcionalidades)
 - [FEATURES](#features)
 <!--te-->
 

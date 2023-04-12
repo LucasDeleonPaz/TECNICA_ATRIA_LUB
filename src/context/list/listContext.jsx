@@ -18,7 +18,7 @@ export const ListProvider = () => {
     }, dataList)
 
     return (
-        <ListContext.Provider value={dataList}/>
+        <ListContext.Provider value={{dataList, setDataList}}/>
     )
 
 };
