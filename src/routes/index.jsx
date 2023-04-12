@@ -9,7 +9,7 @@ export const Routes = () => {
             <Route exact path="/home">
                 <HomePage/>
             </Route>
-            <Route path="/">
+            <Route path="">
                 <ListPage/>
             </Route>
         </Switch>

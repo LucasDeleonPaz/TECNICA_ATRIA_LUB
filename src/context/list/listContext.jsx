@@ -9,10 +9,9 @@ export const ListProvider = ({children}) => {
     const [dataList, setDataList] = useState({})
 
     useEffect(() => {
-        api
-        .get("/")
-        .then((e) => {
-            setDataList(e);
+        api.get("/").then((res) => {
+            setDataList(res);
+            console.log([res])
         })
         .catch ((e) => console.error(e))
     }, [])

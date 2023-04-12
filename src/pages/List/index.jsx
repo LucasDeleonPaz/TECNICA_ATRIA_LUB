@@ -6,8 +6,7 @@ const ListPage = () => {
     return (
 
         <>
-        EU INCOMODO
-        <CardPerson/>
+            <CardPerson/>
         </>
 
     )
