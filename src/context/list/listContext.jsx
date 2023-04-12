@@ -4,7 +4,7 @@ import { api } from "../../services/api";
 
 export const ListContext = createContext({});
 
-export const ListProvider = () => {
+export const ListProvider = ({children}) => {
 
     const [dataList, setDataList] = useState({})
 
@@ -19,7 +19,9 @@ export const ListProvider = () => {
     },[])
 
     return (
-        <ListContext.Provider value={dataList}/>
+        <ListContext.Provider value={{dataList, setDataList}}>
+            {children}
+        </ListContext.Provider>
     )
 
 };
