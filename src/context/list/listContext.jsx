@@ -4,21 +4,23 @@ import { api } from "../../services/api";
 
 export const ListContext = createContext({});
 
-export const ListProvider = () => {
+export const ListProvider = ({children}) => {
 
     const [dataList, setDataList] = useState({})
 
-    useEffect(()=> {
+    useEffect(() => {
         api
-            .get("")
-            .then((res) => {
-                setDataList(res);
-            })
-            .catch((e) => console.error(e))
-    }, dataList)
+        .get("/")
+        .then((e) => {
+            setDataList(e);
+        })
+        .catch ((e) => console.error(e))
+    }, [])
 
     return (
-        <ListContext.Provider value={{dataList, setDataList}}/>
+        <ListContext.Provider value={{dataList, setDataList}}>
+            {children}
+        </ListContext.Provider>
     )
 
 };

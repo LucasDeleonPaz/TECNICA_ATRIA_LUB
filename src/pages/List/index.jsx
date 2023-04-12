@@ -1,3 +1,5 @@
+import CardPerson from "../../components/card";
+
 
 const ListPage = () => {
 
@@ -5,6 +7,7 @@ const ListPage = () => {
 
         <>
         EU INCOMODO
+        <CardPerson/>
         </>
 
     )
