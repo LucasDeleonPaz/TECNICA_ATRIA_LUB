@@ -13,9 +13,10 @@ export const ListProvider = () => {
             .get("")
             .then((res) => {
                 setDataList(res);
+                console.log(res)
             })
             .catch((e) => console.error(e))
-    }, dataList)
+    },[])
 
     return (
         <ListContext.Provider value={dataList}/>
