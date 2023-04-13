@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ListContext } from "../../context/list/listContext";
 
 import { FaMars, FaVenus } from "react-icons/fa"
@@ -6,13 +6,15 @@ import { FaMars, FaVenus } from "react-icons/fa"
 
 import "./style.css"
 
-const CardPerson = () => {
+const CardPerson = ( {data} ) => {
 
-    //const { dataList } = useContext(ListContext)
-
+    const { dataLista } = useContext(ListContext)
+    
     const capitalize = (name) => {
         return name.charAt(0).toUpperCase() + name.substr(1);
     }
+
+
 
     const dataList = {
         "results": [
@@ -78,22 +80,22 @@ const CardPerson = () => {
         }
     }
 
-    const birth = new Date (dataList.results[0].dob.date)
+    const birth = new Date (data.dob.date)
     const birthDay = birth.getDay() + "/" + birth.getMonth() + "/" + birth.getFullYear()
 
     return (
 
         <div className="card">  
             
-            {dataList.results[0].gender == "male" ? <FaMars/> : <FaVenus/>}
+            {data.gender === "male" ? <FaMars/> : <FaVenus/>}
 
-            <img className="card--img" src={dataList.results[0].picture.medium} alt="Imagem pessoal"/>
+            <img className="card--img" src={data.picture.medium} alt="Imagem pessoal"/>
 
-            <small className="card--name">{capitalize(dataList.results[0].name.first)+ " " + capitalize(dataList.results[0].name.last) }</small>
+            <small className="card--name">{capitalize(data.name.first) + " " + capitalize(data.name.last) }</small>
 
             <small className="card--birthday">{birthDay}</small>
 
-            <small className="card--Phone">{dataList.results[0].phone}</small>
+            <small className="card--Phone">{data.phone}</small>
 
             <button className="card--button">View Profile</button>
 
