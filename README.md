@@ -44,8 +44,6 @@ Abaixo, segue lista de tecnologias usadas para a construção da aplicação
 
  - REACT 
  - REACT-ROUTER-DOM
- - STYLED COMPONENTS
- - MATERIAL UI
  - CONTEXT API
  - REACT ICONS
  - AXIOS
