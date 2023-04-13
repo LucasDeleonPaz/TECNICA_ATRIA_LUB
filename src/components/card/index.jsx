@@ -6,15 +6,17 @@ import { FaMars, FaVenus } from "react-icons/fa"
 
 import "./style.css"
 
-const CardPerson = ( {data} ) => {
+const CardPerson = ({key}) => {
 
-    const { dataLista } = useContext(ListContext)
+    const { setShowProfile, showProfile, perfil} = useContext(ListContext)
     
     const capitalize = (name) => {
         return name.charAt(0).toUpperCase() + name.substr(1);
     }
 
+    const profile = (retorno) => {
 
+    }
 
     const dataList = {
         "results": [
@@ -80,24 +82,33 @@ const CardPerson = ( {data} ) => {
         }
     }
 
-    const birth = new Date (data.dob.date)
-    const birthDay = birth.getDay() + "/" + birth.getMonth() + "/" + birth.getFullYear()
+    
+    
+    const data = dataList.results[0]
+    
+    const birth = new Date (data.dob.date.slice(0,10))
+    const month = birth.getMonth()
+    const birthDay = birth.getDate() +1 + "/" +  + 1 + "/" + birth.getUTCFullYear()
 
     return (
 
         <div className="card">  
             
-            {data.gender === "male" ? <FaMars/> : <FaVenus/>}
+            <div className="container--img">
+                {data.gender === "male" ? <FaMars className="card--gender"/> : <FaVenus className="card--gender"/>}
+            </div>
 
             <img className="card--img" src={data.picture.medium} alt="Imagem pessoal"/>
 
-            <small className="card--name">{capitalize(data.name.first) + " " + capitalize(data.name.last) }</small>
+            <div className="card--persona--info">
+                <small className="card--name">{capitalize(data.name.first) + " " + capitalize(data.name.last) }</small>
 
-            <small className="card--birthday">{birthDay}</small>
+                <small className="card--birthday">{birthDay}</small>
 
-            <small className="card--Phone">{data.phone}</small>
+                <small className="card--Phone">{data.phone}</small>
+            </div>
 
-            <button className="card--button">View Profile</button>
+            <button className="card--button--card" onClick={() => setShowProfile(!showProfile)}>View Profile</button>
 
         </div>
 

@@ -3,12 +3,12 @@ import { ListContext } from "../../context/list/listContext";
 import "./style.css"
 
 import CardPerson from "../../components/card";
-import { api } from "../../services/api";
+import CardView from "../../components/viewCard";
 
 
 const ListPage = () => {
     
-    const { dataLista} = useContext(ListContext)
+    const { dataLista, setShowProfile, showProfile} = useContext(ListContext)
 
     const [showCards, setShowCards] = useState(false)
     const [data, setData] = useState([])
@@ -16,7 +16,6 @@ const ListPage = () => {
     const addNewCard = () => { 
         setShowCards(true)
         setData([dataLista.data.results]);
-
     }
 
     return (
@@ -26,12 +25,13 @@ const ListPage = () => {
                 <div className="pageList--card--button">
                     <button className="card--button" onClick={() => addNewCard()}>ADD NEW</button>
                 </div>
-                {showCards ? 
+                {showCards && data[0].length === 2 ? 
                 data[0]?.map((ele, index) => {
-                    return <CardPerson key={index + "a"} data={ele}/>
+                    return <CardPerson key={index} data={ele}/>
                 }) : 
                 null}
-            </div>            
+            </div>
+            {showProfile ? <CardView /> : null}           
         </div>
 
     )
