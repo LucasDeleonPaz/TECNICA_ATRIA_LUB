@@ -1,0 +1,162 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #38383883;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    height: 75vh;
+    border: 0.4vh solid #EEF2F3;
+    background-color: #FFFFFF;
+    border-radius: 1vh;
+    font-family: Verdana ;
+}
+
+.container--sup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 55%;
+    background: rgb(101,208,245);
+    background: linear-gradient(90deg, rgba(101,208,245,1) 26%, rgba(105,233,208,1) 76%);
+}
+
+.sup--access {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.sup--return {
+    width: 5vh;
+    height: 5vh;
+    color: #FFFFFF;
+}
+
+.sup--tittle {
+    font-size: 2.5vh;
+    height: 500;
+    color: #FFFFFF;
+
+}
+
+.sup--more {
+    width: 5vh;
+    height: 5vh;
+    color: #FFFFFF;
+}
+
+.sup--img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 0.8vh double #E4E6F5;
+    object-fit: cover;
+}
+
+.sup--personal--name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.sup--name {
+    font-size: 4vh;
+    height: 500;
+    color: #FFFFFF;
+
+}
+
+.sup--country {
+    font-size: 1.8vh;
+    height: 500;
+    color: black;
+}
+
+.container--central {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.central--followres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #65DDE6;
+
+}
+
+.central--following {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #4ABCFB;
+}
+
+.central--number {
+    font-size: 2.5vh;
+    color: #FFFFFF;
+    height: 500;
+}
+
+.central--text {
+    font-size: 1.3vh;
+    color: black;
+}
+
+.central--text--2 {
+    font-size: 1.3vh;
+    color: #FFFFFF;
+}
+
+
+.container--inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+}
+
+label {
+    color: #C0D3E4;
+    font-size: 1.2vh;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #F8F8F8;
+    
+}
+
+.inf--Personal--info {
+    color: black;
+    font-size: 2vh;
+}
