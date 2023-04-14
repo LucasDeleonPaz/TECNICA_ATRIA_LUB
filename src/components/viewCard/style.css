@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 35%;
     height: 75%;
     border: 0.4vh solid #EEF2F3;
     background-color: #FFFFFF;
@@ -147,7 +147,7 @@
 
 label {
     color: #C0D3E4;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
 }
 
 hr {
@@ -181,12 +181,30 @@ hr {
         border: 0.8vh double #E4E6F5;
         object-fit: cover;
     }
+
+    label {
+        color: #C0D3E4;
+        font-size: 1.5vh;
+        margin-bottom: 0.1vh;
+    }
 }
 
 @media (max-width: 580px) {
 
     .profile {
         width: 70%;
+        height: 75%;
+        border: 0.4vh solid #EEF2F3;
+        background-color: #FFFFFF;
+        border-radius: 1vh;
+        font-family: Verdana ;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .profile {
+        width: 80%;
         height: 75%;
         border: 0.4vh solid #EEF2F3;
         background-color: #FFFFFF;

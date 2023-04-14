@@ -113,8 +113,9 @@
         border-radius: 50%;
         width: 10vh;
         height: 10vh;
-        position: fixed;
-        margin-right: 55%;
+        position: relative;
+        margin-right: 100%;
+        margin-top: -5%;
         border: 0.7vh solid #E4E6F5;
         object-fit: cover;
 
@@ -134,26 +135,28 @@
         color: #FFFFFF;
         border-radius: 5vh 5vh 5vh 5vh;
         border: 0.1vw solid #B3AAF8;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
 
     .card--name {
         font-family: Verdana ;
         font-size: 2.2vh;
         font-weight: 500;
-        margin-top: -3vh;
+        margin-top: -5vh;
     }
     
     .card--birthday {
         font-family: Verdana ;
         font-size: 2vh;
         font-weight: 500;
-        margin-top: 1vh;
+
     }
     
     .card--Phone {
         font-family: Verdana ;
         font-size: 2vh;
         font-weight: 500;
-        margin-top: 1vh;
+
     }
 }

@@ -11,7 +11,6 @@ const CardView = () => {
 
     const gender = perfil.gender +''
 
-    console.log(dataLista)
     return(
         <div className="modal">
 

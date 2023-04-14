@@ -14,17 +14,12 @@ Aplicação : https://entrevista-theta.vercel.app/
 <br>
 
 <!--ts-->
+- [INDICE](#indice)
 - [SOBRE](#sobre)
 - [TECNOLOGIAS](#tecnologias)
 - [ARQUITETURA DA APLICAÇÃO](#arquitetura-da-aplicação)
-  - [SRC](#src)
-    - [COMPONENTS](#components)
-    - [CONTEXT](#context)
-    - [PAGES](#pages)
-    - [PROVIDERS](#providers)
-    - [ROTAS](#rotas)
-- [FUNCIONALIDADES](#funcionalidades)
-- [FEATURES](#features)
+- [ FUNCIONALIDADES ](#-funcionalidades-)
+- [ FEATURES ](#-features-)
 <!--te-->
 
 <br>
