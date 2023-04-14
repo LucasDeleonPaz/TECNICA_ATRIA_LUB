@@ -21,7 +21,6 @@ O layout final da aplicação segue, em relação às suas disposições, o arqu
     - [PAGES](#pages)
     - [PROVIDERS](#providers)
     - [ROTAS](#rotas)
-    - [SERVICES](#service)
 - [FUNCIONALIDADES](#funcionalidades)
 - [FEATURES](#features)
 <!--te-->
@@ -69,8 +68,6 @@ Abaixo, descrevo toda a estrutura montada, sua composição e os motivos de secc
         - Pasta responsável por alocar o arquivo de código do provedor de serviços que atua em conjunto do contexto.
      - ROUTES
         - Pasta responsável por alocar o arquivo de código gerador e direcionador de rotas.
-    - SERVICES
-        - Pasta responsável por alocar o arquivo de código responsável pela conexão com a API.
 <BR>
 <BR>
 
@@ -91,8 +88,8 @@ do cadastro observado.
  - [x] ROTAS 
  - [X] PROVEDORES
  - [X] SERVIÇOS
- - [] CARDS DE CADASTRO
- - [] CARDS DE VISUALIZAÇÃO - MODAL 
+ - [X] CARDS DE CADASTRO
+ - [X] CARDS DE VISUALIZAÇÃO - MODAL 
 
 <BR>
 <BR>
