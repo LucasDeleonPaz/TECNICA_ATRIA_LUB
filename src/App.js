@@ -1,10 +1,8 @@
 import { Routes } from "./routes";
-import { api } from "./services/api";
 
+import "./index.css"
 
 function App() {
-
-  api()
 
   return (
     <Routes/>
