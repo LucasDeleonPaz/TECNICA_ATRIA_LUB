@@ -8,8 +8,7 @@ export const ListProvider = ({ children }) => {
     const [dataLista, setDataList] = useState([])
     const [data, setData] = useState([])
     const [showProfile, setShowProfile] = useState(false)
-
-    console.log(showProfile)
+    const [perfil, setPerfil] = useState()
 
     axios.all([
         axios.get('https://api.randomuser.me/?results=3'),
@@ -18,11 +17,10 @@ export const ListProvider = ({ children }) => {
         ]).then(axios.spread((cardOne, cardTwo, cardTree) => {
             setDataList({...cardOne,...cardTwo,...cardTree})
             setData(dataLista.data.results)
-            console.log(data)
         }))
 
     return (
-        <ListContext.Provider value={{dataLista, data, setShowProfile, showProfile}}>
+        <ListContext.Provider value={{dataLista, data, setShowProfile, showProfile, setPerfil, perfil}}>
             {children}
         </ListContext.Provider>
     )

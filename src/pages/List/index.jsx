@@ -1,5 +1,8 @@
 import { useContext, useState } from "react";
 import { ListContext } from "../../context/list/listContext";
+
+import { AiOutlinePlus } from "react-icons/ai";
+
 import "./style.css"
 
 import CardPerson from "../../components/card";
@@ -23,11 +26,12 @@ const ListPage = () => {
         <div className="pageList">
             <div className={data.length >0 ? "container" : "container--2"}>
                 <div className="pageList--card--button">
-                    <button className="card--button" onClick={() => addNewCard()}>ADD NEW</button>
+                    <AiOutlinePlus className="card--button" onClick={() => addNewCard()}/>
+                    <small className="card--button--text">ADD NEW</small>
                 </div>
-                {showCards && data[0].length === 2 ? 
-                data[0]?.map((ele, index) => {
-                    return <CardPerson key={index} data={ele}/>
+                {showCards ? 
+                data[0]?.map((ele, key) => {
+                    return <CardPerson key={key} data={ele}/>
                 }) : 
                 null}
             </div>

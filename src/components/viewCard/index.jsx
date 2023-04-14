@@ -7,8 +7,11 @@ import "./style.css"
 
 const CardView = () => {
 
-    const { setShowProfile, showProfile} = useContext(ListContext)
+    const { setShowProfile, perfil, dataLista } = useContext(ListContext)
 
+    const gender = perfil.gender +''
+
+    console.log(dataLista)
     return(
         <div className="modal">
 
@@ -22,11 +25,11 @@ const CardView = () => {
                         <AiOutlinePlus className="sup--more"/>
                     </div>
 
-                    <img className="sup--img"></img>
+                    <img src={perfil.picture.large} className="sup--img"></img>
 
                     <div className="sup--personal--name">
-                        <small className="sup--name">Arianti Silva</small>
-                        <small className="sup--country">Jakarta</small>
+                        <small className="sup--name">{perfil.name.first + " " + perfil.name.last}</small>
+                        <small className="sup--country">{perfil.location.city + ", " + perfil.location.country}</small>
                     </div>
 
                 </div>
@@ -34,13 +37,13 @@ const CardView = () => {
                 <div className="container--central">
 
                     <div className="central--followres">
-                        <small className="central--number">44.895</small>
-                        <small className="central--text">FOLLOWERS</small>
+                        <small className="central--number">{gender.toUpperCase()}</small>
+                        <small className="central--text">GENDER</small>
                     </div>
 
                     <div className="central--following">
-                        <small className="central--number">31.372</small>
-                        <small className="central--text--2">FOLLOWING</small>
+                        <small className="central--number">{perfil.dob.age}</small>
+                        <small className="central--text--2">AGE</small>
                     </div>
 
                 </div>
@@ -48,16 +51,16 @@ const CardView = () => {
                 <div className="container--inf">
 
                     <label>Email</label>
-                    <small className="inf--Personal--info">hello@gmail.com</small>
+                    <small className="inf--Personal--info">{perfil.email}</small>
                     <hr/>
                     <label>Phone</label>
-                    <small className="inf--Personal--info">+62 890 123 456</small>
+                    <small className="inf--Personal--info">{perfil.cell}</small>
                     <hr/>
                     <label>Twitter</label>
                     <small className="inf--Personal--info">@riantsilvi</small>
                     <hr/>
-                    <label>Behance</label>
-                    <small className="inf--Personal--info">behance.net/riantisilve</small>
+                    <label>Street</label>
+                    <small className="inf--Personal--info">{perfil.location.street.name + ", " + perfil.location.street.number}</small>
                 
                 </div>
 

@@ -5,37 +5,93 @@
     width: 100vw;
     height: 100vh;
     background-color: #F0F3FC;
+    font-family: Verdana;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
-    height: 80vh;
+    width: 80%;
+    height: 80%;
 }
 
 .container--2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80vw;
-    height: 80vh;
+    width: 80%;
+    height: 80%;
 }
 
 
 .pageList--card--button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: 40vh;
+    width: 25%;
+    height: 50%;
     border-radius: 1vh;
-    border: 1px solid #38383838;
+    border: .1vw solid #FFFFFF;
 }
+
 .card--button {
-    width: 5vw;
-    height: 5vw;
+    width: 2.5vw;
+    height: 2.5vw;
     border-radius: 50%;
+    border: 0.2vw solid #B3AAF8;
+    background-color: #FFFFFF;
+    color: #B3AAF8;
+}
+
+.card--button--text {
+    font-size: 0.8vw;
+    margin-top: 1vh;
+    color: #B3AAF8;
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        overflow-x: scroll;
+    }
+    
+    .container--2 {
+        
+
+    }
+
+    .pageList--card--button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        height: 50vw;
+        border-radius: 1vh;
+        border: .1vw solid #FFFFFF;
+    }
+    
+    .card--button {
+        width: 7vh;
+        height: 7vh;
+        border-radius: 50%;
+        border: 0.2vw solid #B3AAF8;
+        background-color: #FFFFFF;
+        color: #B3AAF8;
+    }
+
+    .card--button--text {
+        font-size: 1.7vh;
+        margin-top: 1vh;
+        color: #B3AAF8;
+        font-weight: 600;
+    }
 
 }
