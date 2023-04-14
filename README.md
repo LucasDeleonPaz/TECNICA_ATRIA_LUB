@@ -1,8 +1,10 @@
 <H1 ALIGN=CENTER><strong> APLICAÇÃO PRÁTICA | TESTE DE COMPETÊNCIA TÉCNICA </strong></H1>
 
-Projeto que tem por intuito demonstrar a competência técnica em relação a capacidade para construir uma aplicação web, utilizando do React para tal. <br>
-Tal aplicação fora construída com base no arquivo PDF à mim enviado para servir de exemplo<br>
+Projeto que tem por intuito demonstrar a competência técnica em relação a capacidade para construir uma aplicação web, utilizando do React para tal.
+Tal aplicação fora construída com base no arquivo PDF à mim enviado para servir de exemplo.
 O layout final da aplicação segue, em relação às suas disposições, o arquivo base apresentado.
+
+Aplicação : https://entrevista-theta.vercel.app/
 
 <br>
 <H3><strong>ESSE DOCUMENTO GARANTE TODA A DOCUMENTAÇÃO RELATIVA À ESSA PRODUÇÃO.</strong></h3>
